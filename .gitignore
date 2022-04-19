@@ -98,3 +98,12 @@ Thumbs.db
 .idea/tasks.xml
 .idea/datasources.xml
 .idea/dataSources.ids
+
+app/
+.git/
+gradle/
+build.gradle
+gradle.properties
+gradlew
+gradlew.bat
+settings.gradle
