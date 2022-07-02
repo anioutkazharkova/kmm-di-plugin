@@ -1,0 +1,25 @@
+plugins {
+    id("kotlin-multiplatform")
+    id("maven-publish")
+}
+
+group = "com.azharkova.di.inject"
+version = "0.1.1"
+
+kotlin {
+    jvm {
+        compilations.all {
+            kotlinOptions.jvmTarget = "1.8"
+        }
+        testRuns["test"].executionTask.configure {
+            useJUnit()
+        }
+    }
+    ios {
+        binaries {
+            framework {
+                baseName = "library"
+            }
+        }
+    }
+}
