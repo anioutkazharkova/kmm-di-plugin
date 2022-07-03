@@ -7,11 +7,11 @@ buildscript {
         gradlePluginPortal()
     }
     dependencies {
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.0")
         classpath("com.android.tools.build:gradle:7.0.2")
         classpath("com.google.dagger:hilt-android-gradle-plugin:2.40.5")
-        classpath("org.jetbrains.kotlin:kotlin-serialization:1.6.10")
-        classpath("com.azharkova.di.inject:kmm-di-inject-gradle:0.1.1")
+        classpath("org.jetbrains.kotlin:kotlin-serialization:1.7.0")
+        classpath("com.azharkova.di.inject:kmm-di-inject-gradle:0.1.3")
     }
 }
 

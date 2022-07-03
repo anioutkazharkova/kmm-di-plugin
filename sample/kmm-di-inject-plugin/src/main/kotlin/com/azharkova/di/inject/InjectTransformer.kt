@@ -48,7 +48,6 @@ class InjectTransformer(
         if (declaration.hasAnnotation(injectServiceAnnotation)) {
             declaration.body = makeResolveBody(declaration)
         }
-        //appContainer.g
         return super.visitFunctionNew(declaration)
     }
 

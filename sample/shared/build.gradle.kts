@@ -30,14 +30,14 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 implementation("io.github.anioutkazharkova:di-multiplatform-lib:1.0.4.5")
-implementation(project(":kmm-di-inject-annotation"))
+//implementation(project(":kmm-di-inject-annotation"))
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion")
 
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion")
                 implementation("io.ktor:ktor-client-core:$ktorVersion")
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:$serializationVersion")
                 implementation("io.ktor:ktor-client-serialization:$ktorVersion")
-                implementation("com.azharkova.di.inject:kmm-di-inject-runtime:0.1.1")
+                implementation("com.azharkova.di.inject:kmm-di-inject-runtime:0.1.3")
             }
         }
         val commonTest by getting {
@@ -93,5 +93,5 @@ val packForXcode by tasks.creating(Sync::class) {
 tasks.getByName("build").dependsOn(packForXcode)
 
 dependencies {
-    implementation(project(":kmm-di-inject-annotation"))
+   // implementation(project(":kmm-di-inject-annotation"))
 }
